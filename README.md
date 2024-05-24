@@ -87,4 +87,10 @@ This Dockerfile also ensures that the SRTP module (`res_srtp.so`) is loaded by c
 
 ## Credit
 
-Credit and for more details on Microsoft Teams's end refer to [Nick Bouwhuis's blog post Asterisk as a Teams Direct Routing SBC](https://nick.bouwhuis.net/posts/2022-01-02-asterisk-as-a-teams-sbc/).
+Credit and for more details on Microsoft Teams's end refer to [Nick Bouwhuis's blog post - Asterisk as a Teams Direct Routing SBC](https://nick.bouwhuis.net/posts/2022-01-02-asterisk-as-a-teams-sbc/).
+
+## License
+
+This project is licensed under the Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0) license. You can view the full license text [here](./LICENSE).
+
+![CC BY-NC-SA 4.0](https://licensebuttons.net/l/by-nc-sa/4.0/88x31.png)

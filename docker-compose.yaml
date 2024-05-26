@@ -1,0 +1,13 @@
+version: '3.8'
+
+services:
+  asterisk:
+    image: asterisk-msteams:latest
+    container_name: asterisk-msteams
+    ports:
+      - "5060-5061:5060-5061/tcp"
+      - "5060-5061:5060-5061/udp"
+      - "10000-20000:10000-20000/udp"
+
+    restart: always
+

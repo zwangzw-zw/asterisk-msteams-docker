@@ -13,7 +13,7 @@ RUN wget http://downloads.asterisk.org/pub/telephony/asterisk/asterisk-21-curren
 RUN cd /asterisk-21* && \
     sed -i 's/ast_sockaddr_stringify_host(&transport_state->external_signaling_address)/"___ACTUAL.FQDN.HERE___"/' res/res_pjsip_nat.c && \
     sed -i 's/ast_sockaddr_stringify_host(&transport_state->external_signaling_address)/"___ACTUAL.FQDN.HERE___"/' res/res_pjsip_nat.c && \
-   ./contrib/scripts/install_prereq install && \
+    ./contrib/scripts/install_prereq install && \
     ./configure && \
     make menuselect.makeopts && \
     menuselect/menuselect --enable codec_silk && \

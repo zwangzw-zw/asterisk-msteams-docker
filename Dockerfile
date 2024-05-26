@@ -1,4 +1,4 @@
-FROM debian:latest
+FROM debian:latest-slim
 
 # Install initial necessary packages
 RUN apt-get update && apt-get install -y \

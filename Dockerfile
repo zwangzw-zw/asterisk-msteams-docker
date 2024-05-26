@@ -10,8 +10,7 @@ RUN wget http://downloads.asterisk.org/pub/telephony/asterisk/asterisk-21-curren
     rm asterisk-21-current.tar.gz
 
 # Find the correct Asterisk directory and set it as an environment variable
-RUN export ASTERISK_DIR=$(ls -d /asterisk-21*) && \
-    cd $ASTERISK_DIR && \
+RUN cd /asterisk-21* && \
     sed -i 's/ast_sockaddr_stringify_host(&transport_state->external_signaling_address)/"___ACTUAL.FQDN.HERE___"/' res/res_pjsip_nat.c && \
     sed -i 's/ast_sockaddr_stringify_host(&transport_state->external_signaling_address)/"___ACTUAL.FQDN.HERE___"/' res/res_pjsip_nat.c && \
    ./contrib/scripts/install_prereq install && \
